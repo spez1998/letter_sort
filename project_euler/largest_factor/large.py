@@ -5,13 +5,19 @@ Created on Tue Mar 10 23:02:06 2020
 @author: charl
 """
 x = []
-m = 24
-for n in range(1,m):
-    if m%n == 0:
-        x.append(n)        
-for i in range(len(x)):
-    for a in range(2,x[i]):
-        if x[i]%a == 0:
-            x[i] = 0
-            break
+b = 600851475143 
+m = b
+n=2
+a=1
+while n <= int(b/2):
+
+      if m%n == 0:
+          x.append(n)
+          a = a*n
+          m = m/n 
+          if a == b:
+              break
+      else:
+          n = n + 1
 print(max(x))
+            
