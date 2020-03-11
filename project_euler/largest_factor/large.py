@@ -10,7 +10,6 @@ m = b
 n=2
 a=1
 while n <= int(b/2):
-
       if m%n == 0:
           x.append(n)
           a = a*n
