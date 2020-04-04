@@ -9,7 +9,6 @@ import numpy as np
 x = list(range(1,21))
 y = np.array([0]*21*21)
 y.shape = (21,21)
-print(sum(y[:,3]))
 for i in x:
     b = i
     j = 2
@@ -24,11 +23,4 @@ for a in range(2,21):
     power = max(y[:,a])
     print(a, power)
     mult = mult*(a**power)
-print(mult)                
-        
-    
-
-             
-
-             
- 
+print(mult)
